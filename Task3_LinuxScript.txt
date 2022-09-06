@@ -1,0 +1,31 @@
+1. SSH into a server with IP "10.23.45.78", with the user "free-now-user" and the identity file "my_key"
+
+
+Solution:
+Create a config file
+
+$ vi ~/.ssh/config
+
+--press insert--
+
+
+  Host sshintoserver
+	Hostname 10.23.45.78
+	User free-now-user
+	IdentityFile ~/.ssh/my_key
+
+--press escape & :wq--
+
+$ ssh sshintoserver
+
+
+
+2. Go to the directory "/var/log"
+
+$ cd /var/log
+
+
+
+3. show on console the latest/last 20 lines of the file "dpkg.log"
+
+$ tail -20 dpkg.log	
